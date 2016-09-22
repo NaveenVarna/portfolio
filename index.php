@@ -1,3 +1,7 @@
+<?php
+$display_name = 'Naveen Varna';
+$year = date("Y");
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -65,13 +69,26 @@
             </a>
           </li>
 	  <li>
+            <a href="img/KGdunk.gif">
+              <img src="img/KGdunk.gif" alt="Kevin Garnett Dunk">
+              <p>A sample gif I made of Kevin Garnett dunking a basketball (made in AfterEffects).</p>
+            </a>
+          </li>
+          <li>
+            <a href="img/DBZ.gif">
+              <img src="img/DBZ.gif" alt="Frieza Transformation">
+              <p>A sample gif I made of Frieza from DBZ transforming (made in AfterEffects).</p>
+            </a>
+          </li>
 
         </ul>
       </section>
       <footer>
         <a href="http://linkedin.com/in/naveenvarna">
           <img src="img/linkedin.jpg" alt="LinkedIn logo" class="social-icon"></a>
-        <p>&copy; 2016 Naveen Varna.</p>  
+        <p>&copy; <?php echo "$year $display_name. "; 
+echo "Last modified: " . date ("F d Y H:i:s.", getlastmod());
+?></p>  
       </footer>
     </div>
   </body>  
