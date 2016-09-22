@@ -1,3 +1,7 @@
+<?php
+$display_name = 'Naveen Varna';
+$year = date("Y");
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -82,7 +86,9 @@
       <footer>
         <a href="http://linkedin.com/in/naveenvarna">
           <img src="img/linkedin.jpg" alt="LinkedIn logo" class="social-icon"></a>
-        <p>&copy; 2016 Naveen Varna.</p>  
+        <p>&copy; <?php echo "$year $display_name. "; 
+echo "Last modified: " . date ("F d Y H:i:s.", getlastmod());
+?></p>  
       </footer>
     </div>
   </body>  
